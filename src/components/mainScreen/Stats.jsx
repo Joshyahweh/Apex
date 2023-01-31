@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <section className="grid grid-cols-2 text-[10px] font-bold">
       <main className="space-y-3 bg-white">
-        <div className="flex items-center text-slate-500  px-8  space-x-48">
+        <div className="flex items-center text-slate-500   px-8  space-x-48">
           <p>Products</p>
           <p>Quantity</p>
           <p className="relative right-[70px]">Bid Price</p>
