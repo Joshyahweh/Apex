@@ -5,6 +5,7 @@ import { RiBook3Line } from "react-icons/ri";
 import { GiBackwardTime } from "react-icons/gi";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { MdOutlineCancel } from "react-icons/md";
+import Link from "next/link";
 
 const MarketSubmenu = () => {
   return (
@@ -21,29 +22,41 @@ const MarketSubmenu = () => {
         />
       </label>
       <div className="flex flex-col gap-4 pt-8 font-bold">
-        <div className="flex items-center justify-start gap-5 cursor-pointer  pl-5">
+        <div className="flex items-center justify-start gap-5  pl-5">
           <GrLineChart size={20} />
-          <p className="text-[10px]">Product View</p>
+          <Link href="#" className="text-[10px]">
+            Product View
+          </Link>
         </div>
-        <div className="flex items-center bg-[#F8FAFB] py-3 justify-start gap-5 cursor-pointer mx-2 pl-5">
+        <div className="flex items-center bg-[#F8FAFB] py-3 justify-start gap-5 mx-2 pl-5">
           <RiBook3Line size={20} />
-          <p className="text-[10px] text-red-500">Order Book</p>
+          <Link href="#" className="text-[10px] text-red-500">
+            Order Book
+          </Link>
         </div>
-        <div className="flex items-center justify-start gap-5 cursor-pointer  pl-5">
+        <div className="flex items-center justify-start gap-5  pl-5">
           <GiBackwardTime size={20} />
-          <p className="text-[10px]">Price History</p>
+          <Link href="#" className="text-[10px]">
+            Price History
+          </Link>
         </div>
-        <div className="flex items-center justify-start gap-5 cursor-pointer  pl-5">
+        <div className="flex items-center justify-start gap-5  pl-5">
           <GrFormView size={20} />
-          <p className="text-[10px]">Open Orders</p>
+          <Link href="#" className="text-[10px]">
+            Open Orders
+          </Link>
         </div>
-        <div className="flex items-center justify-start gap-5 cursor-pointer  pl-5">
+        <div className="flex items-center justify-start gap-5  pl-5">
           <AiOutlineCheckCircle size={20} />
-          <p className="text-[10px]">ClosedOrders</p>
+          <Link href="#" className="text-[10px]">
+            ClosedOrders
+          </Link>
         </div>
-        <div className="flex items-center justify-start gap-5 cursor-pointer  pl-5">
+        <div className="flex items-center justify-start gap-5  pl-5">
           <MdOutlineCancel size={20} />
-          <p className="text-[10px]">Cancelled Trades</p>
+          <Link href="#" className="text-[10px]">
+            Cancelled Trades
+          </Link>
         </div>
       </div>
     </main>

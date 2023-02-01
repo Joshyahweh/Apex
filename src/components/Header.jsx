@@ -4,12 +4,15 @@ import logo from "../../public/assets/logo.png";
 import { IoSunnyOutline } from "react-icons/io5";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 import { TbCurrencyNaira } from "react-icons/tb";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="grid grid-cols-2 items-center justify-between bg-white px-4">
       <main className="flex items-center justify-between  pr-10">
-        <Image src={logo} alt="Logo" className="cursor-pointer" />
+        <Link href="/">
+          <Image src={logo} alt="Logo" className="cursor-pointer" />
+        </Link>
         <div className="flex items-center justify-between gap-2 bg-[#F4F4F6] p-2 rounded-2xl cursor-pointer">
           <p className="uppercase text-[10px] font-semibold">light</p>
           <IoSunnyOutline className="bg-white p-1 rounded-full" size={20} />
