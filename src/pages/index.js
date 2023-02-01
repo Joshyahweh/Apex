@@ -17,11 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex items-center justify-center pt-5">
-        <button className="bg-red-500 p-3 text-white rounded-2xl">
-          <Link href="/dashboard/market/order-book">
+        <Link href="/dashboard/market/order-book">
+          <button className="bg-red-500 p-3 text-white rounded-2xl">
             Click to go to the ideal route
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </>
   );
