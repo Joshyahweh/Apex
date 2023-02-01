@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+import { BsEye, BsSearch } from "react-icons/bs";
 import { GrFormView, GrLineChart } from "react-icons/gr";
 import { RiBook3Line } from "react-icons/ri";
 import { GiBackwardTime } from "react-icons/gi";
@@ -11,7 +11,7 @@ const MarketSubmenu = () => {
   return (
     <main className="mx-2 bg-white h-fit pb-5 my-2">
       <label className="relative block">
-        <div className="absolute inset-y-0 left-0 flex items-center pl-2">
+        <div className="absolute inLink href='#'-y-0 left-0 flex items-center pl-2">
           <BsSearch className="text-gray-500" />
         </div>
         <input
@@ -22,42 +22,33 @@ const MarketSubmenu = () => {
         />
       </label>
       <div className="flex flex-col gap-4 pt-8 font-bold">
-        <div className="flex items-center justify-start gap-5  pl-5">
+        <Link href="#" className="flex items-center justify-start gap-5  pl-5">
           <GrLineChart size={20} />
-          <Link href="#" className="text-[10px]">
-            Product View
-          </Link>
-        </div>
-        <div className="flex items-center bg-[#F8FAFB] py-3 justify-start gap-5 mx-2 pl-5">
+          <p className="text-[10px]">Product View</p>
+        </Link>
+        <Link
+          href="#"
+          className="flex items-center bg-[#F8FAFB] py-3 justify-start gap-5 mx-2 pl-3"
+        >
           <RiBook3Line size={20} />
-          <Link href="#" className="text-[10px] text-red-500">
-            Order Book
-          </Link>
-        </div>
-        <div className="flex items-center justify-start gap-5  pl-5">
+          <p className="text-[10px] text-red-500">Order Book</p>
+        </Link>
+        <Link href="#" className="flex items-center justify-start gap-5  pl-5">
           <GiBackwardTime size={20} />
-          <Link href="#" className="text-[10px]">
-            Price History
-          </Link>
-        </div>
-        <div className="flex items-center justify-start gap-5  pl-5">
-          <GrFormView size={20} />
-          <Link href="#" className="text-[10px]">
-            Open Orders
-          </Link>
-        </div>
-        <div className="flex items-center justify-start gap-5  pl-5">
+          <p className="text-[10px]">Price History</p>
+        </Link>
+        <Link href="#" className="flex items-center justify-start gap-5  pl-5">
+          <BsEye size={20} />
+          <p className="text-[10px]">Open Orders</p>
+        </Link>
+        <Link href="#" className="flex items-center justify-start gap-5  pl-5">
           <AiOutlineCheckCircle size={20} />
-          <Link href="#" className="text-[10px]">
-            ClosedOrders
-          </Link>
-        </div>
-        <div className="flex items-center justify-start gap-5  pl-5">
+          <p className="text-[10px]">ClosedOrders</p>
+        </Link>
+        <Link href="#" className="flex items-center justify-start gap-5  pl-5">
           <MdOutlineCancel size={20} />
-          <Link href="#" className="text-[10px]">
-            Cancelled Trades
-          </Link>
-        </div>
+          <p className="text-[10px]">Cancelled Trades</p>
+        </Link>
       </div>
     </main>
   );
