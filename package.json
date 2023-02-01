@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:dev": "nodemon ./formData.js"
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "axios": "^1.2.6",
+    "dotenv": "^16.0.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "express": "^4.18.2",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -19,6 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "nodemon": "^2.0.20",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   }
